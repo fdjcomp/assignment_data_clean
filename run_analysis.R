@@ -165,33 +165,3 @@ write.table(task5_table, pfname, row.name=FALSE)
 
 
 
-#codebook
-#Informationaboutthevariables(includingunits!)inthe
-#data set not contained in the tidy data
-#• Information about the summary choices you made
-#• Information about the experimental study design you
-#used
-#
-
-
-#====================================================================================
-#get indexes within the group of 561 vars of matches for "-Mean", "-mean" and "-std"
-#this will include also means like "fBodyGyro-meanFreq()-X"
-#these are the col_names in X_train.txt or X_test.txt
-#integer index of columns to keep
-#idx<-grep("(-[Mm]ean|-std)", dffeat$var_name)
-
-
-#NOTCLEAR IF TO BE DONE
-#IS NOT TO BE DONE, SEE FORUM discussion
-#drop cols with "std"
-#dfallmean<-select(dfall, -matches("std"))
-
-#> str(dfallmean)
-#'data.frame':   10299 obs. of  55 variables:
-# $ subject                             : Factor w/ 30 levels "1","2","3","4",..: 2 2 2 2 2 2 2 2 2 2 ...
-# $ activity                            : Factor w/ 6 levels "WALKING","WALKING_UPSTAIRS",..: 5 5 5 5 5 5 5 5 5 5 ...
-# $ tBodyAcc.mean...X                   : num  0.257 0.286 0.275 0.27 0.275 ...
-
-
-
